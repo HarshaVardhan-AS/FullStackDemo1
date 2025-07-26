@@ -1,4 +1,4 @@
-A simple full-stack web app that tracks and displays user activities using Flask and HTML/CSS.
+A simple full-stack web application
 
 **Tech Stack**
 
