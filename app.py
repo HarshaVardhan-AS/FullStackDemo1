@@ -26,7 +26,6 @@ def init_db():
             )
         ''')
         db.commit()
-        print("✅ Database initialized")
 
 init_db()
 
