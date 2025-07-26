@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded shadow-md w-full max-w-4xl">
+    <h1 class="text-3xl font-bold mb-4 text-center">Welcome to the Dashboard</h1>
+    <p class="mb-6 text-center text-gray-600">Logged in as: <strong>{{ user.email }}</strong></p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+      <div class="bg-blue-100 text-blue-800 p-4 rounded shadow">
+        <p class="font-semibold text-lg">Projects Done</p>
+        <p class="text-2xl">3</p>
+      </div>
+      <div class="bg-green-100 text-green-800 p-4 rounded shadow">
+        <p class="font-semibold text-lg">Total Posts</p>
+        <p class="text-2xl">4</p>
+      </div>
+      <div class="bg-yellow-100 text-yellow-800 p-4 rounded shadow">
+        <p class="font-semibold text-lg">Pending Tasks</p>
+        <p class="text-2xl">2</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 p-4 rounded shadow mb-6">
+      <h2 class="text-xl font-semibold mb-2">Recent Activity</h2>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Submitted Project 1</li>
+        <li>Commented on Thread</li>
+        <li>Conducted Meeting in 2 hours ago</li>
+      </ul>
+    </div>
+      
+    <div class="text-center">
+      <a href="/logout" class="inline-block bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">
+        Logout
+      </a>
+    </div>
+  </div>
+</body>
+</html>
